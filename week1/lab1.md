@@ -112,11 +112,11 @@ echo 'Hello world' | wc
 Grep allows you to search for a pattern in a file
 
 ```
-grep rs7540009 hapmap1
+grep rs7540009 hapmap1.map
 
-grep rs75 hapmap1
+grep rs75 hapmap1.map
 
-grep rs75 hapmap1 | wc -l
+grep rs75 hapmap1.map | wc -l
 
 
 ```
