@@ -12,8 +12,7 @@
 
 ### Data
 * [week1.zip](https://www.dropbox.com/s/mato9e1ovrom4ov/week1.zip?dl=0)
-<!--
-## Week 2
+<!-- ## Week 2
 
 * [Lab 2](week2/lab2.md)
 
@@ -52,6 +51,4 @@
 * [Lab week 8 Part III](week8/lab_week8_3.md)
 
 [//]: # ### Data
-* [Data Part III](https://www.dropbox.com/s/ieer9l0tzsj6f9z/data_week7.zip?dl=0)
-
--->
+* [Data Part III](https://www.dropbox.com/s/ieer9l0tzsj6f9z/data_week7.zip?dl=0)-->
