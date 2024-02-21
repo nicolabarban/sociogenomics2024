@@ -13,14 +13,14 @@
 ### Data
 * [week1.zip](https://www.dropbox.com/s/mato9e1ovrom4ov/week1.zip?dl=0)
 
-<!-- ## Week 2
+## Week 2
 
 * [Lab 2](week2/lab2.md)
 
 ### Data
 * [week2.zip](https://www.dropbox.com/s/apaal9fjpa01inc/week2.zip?dl=0)
 
-
+<!-- 
 
 ## Week 4
 
