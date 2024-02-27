@@ -40,4 +40,4 @@ Debora, Odetta
 
 * [Bad Blood podcast Episode 5](https://www.bbc.co.uk/sounds/play/m001g927)
 * [Bad Blood podcast Episode 6](https://www.bbc.co.uk/sounds/play/m001gj50)
-* [](https://www.gimjournal.org/article/S1098-3600(23)01068-7/fulltext)
+* [link to AMCG paper](https://www.gimjournal.org/article/S1098-3600(23)01068-7/fulltext)
