@@ -20,14 +20,16 @@
 ### Data
 * [week2.zip](https://www.dropbox.com/s/apaal9fjpa01inc/week2.zip?dl=0)
 
-<!-- 
+
 
 ## Week 4
 
-* [Lab 4](week4/lab4.md)
+* [Lab 3](week3/lab3.md)
 ### Data
-* [week4.zip](https://www.dropbox.com/s/z42fy0pp5zkmwi2/lab3.zip?dl=0)
+* [week3.zip](https://www.dropbox.com/s/z42fy0pp5zkmwi2/lab3.zip?dl=0)
 
+
+<!-- 
 ## Week 5
 
  * [Lab week 5](week5/lab_week5.md)
