@@ -22,7 +22,7 @@
 
 
 
-## Week 4
+## Week 3
 
 * [Lab 3](week3/lab3.md)
 ### Data
