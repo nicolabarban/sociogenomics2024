@@ -17,26 +17,9 @@ cd $HOME/Sociogenomics
 rm Data/*.*
 
 wget -O Data/lab_week3.zip https://www.dropbox.com/s/wum0okiq4dbn9p0/week4.zip?dl=0 
-unzip -o -d Data/ Data/lab_week4.zip 
+unzip -o -d Data/ Data/lab_week3.zip 
 mv Data/week4/*.*  Data/ 
 rm -r Data/week4/
-```
-
-
-
-### Select individuals
-```
-./plink --bfile Data/hapmap-ceu \
-        --keep Data/list.txt \
-        --make-bed --out  Results/selectedIndividuals
-
-```
-
-### Select individuals with genotype at least 95% complete
-We can select individuals based on the completness of their genotype
-```
-
-./plink --bfile Data/hapmap-ceu --make-bed --mind 0.05 --out Results/highgeno
 ```
 
 
@@ -52,6 +35,17 @@ In this way we select only a specific marker, in this case SNP `rs9930506`
             --out  Results/rs9930506sample
 
 ```
+
+### Select individuals with genotype at least 95% complete
+We can select individuals based on the completness of their genotype
+```
+
+./plink --bfile Data/hapmap-ceu --make-bed --mind 0.05 --out Results/highgeno
+```
+
+
+
+
 
 
 
@@ -80,7 +74,7 @@ This is how we add a phenotipic information to a plink file
 ```
 
 
-./plink      --bfile Data/1kg_EU_qc \
+./plink      --bfile Data/1kg_hm3_qc \
              --pheno Data/BMI_pheno.txt \
              --make-bed --out Results/1kg_EU_BMI
 
@@ -116,20 +110,6 @@ variants
 head Data/missing_data.imiss
 ```
 
-Filter females
-```
-
-./plink     --bfile Data/hapmap-ceu \
-            --filter-females \
-            --make-bed \
-            --out Results/hapmap_filter_females
-
-```
-
-
-```
- head Data/1kg_EU_BMI.fam
-```
 
 how many observations?
 
@@ -144,30 +124,6 @@ how many variants?
 ```
 
 
-## Allele Frequency
-
-
-
-Allele frequency
-```
- ./plink --bfile Data/hapmap-ceu  --freq --out Results/Allele_Frequency
-```
-
-```
-head Results/Allele_Frequency.frq 
-```
-
-### Missing values
-
-individuals
-```
-./plink --bfile Data/hapmap-ceu --missing --out Results/missing_data
-```
-variants
-```
-
-head Data/missing_data.imiss
-```
 
 Filter females
 ```
