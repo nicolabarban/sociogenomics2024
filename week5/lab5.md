@@ -6,7 +6,6 @@
 
 
 
-```
 ## Installing Plink in your system
 
 **Let's start from our home directory and change directory to** `Sociogenomics/Software`
