@@ -212,7 +212,7 @@ Calculate linkage disequilibrium
 ```
 
 
-
+```
 ./plink 	 --bfile Data/1kg_hm3_QC \
         	--indep-pairwise 50 5 0.2 \
         	--out  Results/1kg_hm3_QC_pruned
