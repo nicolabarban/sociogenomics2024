@@ -37,13 +37,16 @@
 
 
 
-<!-- 
+
 ## Week 5
 
  * [Lab week 5](week5/lab_week5.md)
+### Data
+* [week5.zip](https://www.dropbox.com/scl/fi/w89peadcqzuzooighefx2/DATA.zip?rlkey=1cmzr1gchmyyiupqxq4pjte80&dl=0)
 
 
 
+<!-- 
 
 ## Week 6
 
