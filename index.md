@@ -46,7 +46,7 @@
 
 
 
-<!-- 
+
 
 ## Week 6
 
@@ -55,7 +55,7 @@
 ### Data
 * [week6.zip](https://www.dropbox.com/s/kwciw2cb19gkrzy/week6.zip?dl=0)
 
-
+<!-- 
 ## Week 8
 
 * [Lab week 8 Part I](week8/lab_week8_1.md)
