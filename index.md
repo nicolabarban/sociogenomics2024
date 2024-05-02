@@ -55,14 +55,13 @@
 ### Data
 * [week6.zip](https://www.dropbox.com/s/kwciw2cb19gkrzy/week6.zip?dl=0)
 
-<!-- 
-## Week 8
 
-* [Lab week 8 Part I](week8/lab_week8_1.md)
-* [Lab week 8 Part II](week8/lab_week8_2.md)
+## Week 8
+* [Lab week 8 PGS in R](week8/lab_week8_1.md)
+* [Lab week 8 ManhattanPLots and Genetic Correlations](week8/lab_week8_1.md)
+
 * [Data](week8/LD-Hub_genetic_correlation_example.txt)
 
 * [Lab week 8 Part III](week8/lab_week8_3.md)
 
-[//]: # ### Data
-* [Data Part III](https://www.dropbox.com/s/ieer9l0tzsj6f9z/data_week7.zip?dl=0)-->
+
