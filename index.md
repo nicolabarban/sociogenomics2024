@@ -57,10 +57,18 @@
 
 
 ## Week 8
-* [Lab week 8 PGS in R](week8/lab_week8_1.md)
-* [Lab week 8 ManhattanPLots and Genetic Correlations](week8/lab_week8_1.md)
+* [Lab week 8 PGS in R](week8/lab_week8.md)
 
-* [Data](week8/LD-Hub_genetic_correlation_example.txt)
+
+
+## Week 9
+* [Lab week 9 ManhattanPLots Summary Statistics](week9/lab_week9_1.md)
+
+
+
+
+
+* [Data correlation](week8/LD-Hub_genetic_correlation_example.txt)
 
 * [Lab week 8 Part III](week8/lab_week8_3.md)
 
