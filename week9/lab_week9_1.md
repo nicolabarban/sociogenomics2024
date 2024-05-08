@@ -67,12 +67,13 @@ qq(EAgwasResults$P)
 Highlighting significant results
 
 ```
- hits<-EAgwasResults_sub[EAgwasResults_sub$P<5e-08,]
+ hits<-EAgwasResults_sub[EAgwasResults_sub$P<5e-50,]
 
+EAgwasResults_sub$highlight.snps<-0
 for ( i in 1: dim(hits)[1]){
-chr<-hits[i,4]
-loc_min<- hits[i, 5]-1000
-loc_max<- hits[i, 5]+1000
+chr<-as.numeric(hits[i,4])
+loc_min<- as.numeric(hits[i, 5]-5000)
+loc_max<- as.numeric(hits[i, 5]+5000)
 neighbours.snps<- EAgwasResults_sub$rsID[EAgwasResults_sub$Chr==chr & EAgwasResults_sub$BP>loc_min & EAgwasResults_sub$BP<loc_max]
 EAgwasResults_sub$highlight.snps[EAgwasResults_sub$rsID %in% neighbours.snps] <- 1
 }
@@ -83,33 +84,12 @@ EAgwasResults_sub$highlight.snps[EAgwasResults_sub$rsID %in% neighbours.snps] <-
 ```
 png(file="manhattan_with_highlights.png" , width = 1200, height = 600)
 # add highlight command to the Manhattan plot 
-manhattan(EAgwasResults_sub, chr="CHR", bp="BP", snp="rsID",
+manhattan(EAgwasResults_sub, chr="Chr", bp="BP", snp="rsID",
                             p="P", 
                             highlight=EAgwasResults_sub$rsID[EAgwasResults_sub$highlight.snps==1],
                             suggestiveline=F)
 dev.off()
 ```
-
-
-Installing package Geni.plots
-
-```{r}
-install.packages("remotes")
-remotes::install_github("jrs95/geni.plots", build_vignettes = TRUE)
-
-
-library(dplyr)
-library(geni.plots)
-```
-
-```{r}
-jelp
-```
-
-
-
-
-
 
 
 
@@ -145,5 +125,34 @@ ggplot(data = data_rg, aes(Trait1, Trait2, fill = rg))+
     theme(axis.text.x = element_text(angle = 45, vjust = 1, 
           size = 8, hjust = 1))+
  coord_fixed()
+```
+## Locuszoom
+
+
+* http://locuszoom.org
+
+
+
+```
+devtools::install_github("myles-lewis/locuszoomr")
+
+library(locuszoomr)
+data(SLE_gwas_sub)
+
+library(BiocInstaller)
+biocLite("EnsDb.Hsapiens.v75")
+
+loc <- locus(gene = 'UBE2L3', SLE_gwas_sub, flank = 1e5)
+summary(loc)
+locus_plot(loc)
+
+# Or FTP download the full summary statistics from
+# https://www.ebi.ac.uk/gwas/studies/GCST003156
+library(data.table)
+SLE_gwas <- fread('../bentham_2015_26502338_sle_efo0002690_1_gwas.sumstats.tsv')
+
+loc <- locus(gene = 'UBE2L3', SLE_gwas, flank = 1e5)
+locus_plot(loc)
+
 ```
 
