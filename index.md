@@ -64,7 +64,7 @@
 ## Week 9
 * [Lab week 9 ManhattanPLots Summary Statistics](week9/lab_week9_1.md)
 * [LDSC in R](week9/genetic_correlation_in R.md)
-* [LDSC in python](week9/genetic_correlation_in python.md)
+* [LDSC in python](week9/genetic_correlation_in_python.md)
 * [Data correlation](week8/LD-Hub_genetic_correlation_example.txt)
 * [Data LDSC](https://www.dropbox.com/scl/fo/rj0drz3xamt2llnw67fu5/ABK_DtpmMy53XAs_mN6zXN0?rlkey=x05t5tmiw1tv3dvgffjiigt9b&dl=0)
 
