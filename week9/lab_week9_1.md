@@ -51,17 +51,23 @@ install.packages("qqman")
 Save the figure into an external png file format
 ```
 png(file="manhattan_without_highlights.png" , width = 1200, height = 600)
-manhattan(EAgwasResults_sub, chr="Chr",
+
+
+manhattan(EAgwasResults_sub, 
+            chr="Chr",
 	 					bp="BP",
 						snp="rsID",
-						 p="P",suggestiveline=F)
+						p="P",
+						suggestiveline=F)
+						 
+						 
 dev.off()
 ```
 
 
-
+QQplot
 ```
-qq(EAgwasResults$P)
+qq(EAgwasResults_sub$P)
 ```
 
 Highlighting significant results
@@ -70,11 +76,15 @@ Highlighting significant results
  hits<-EAgwasResults_sub[EAgwasResults_sub$P<5e-50,]
 
 EAgwasResults_sub$highlight.snps<-0
+
 for ( i in 1: dim(hits)[1]){
+
 chr<-as.numeric(hits[i,4])
 loc_min<- as.numeric(hits[i, 5]-5000)
 loc_max<- as.numeric(hits[i, 5]+5000)
+
 neighbours.snps<- EAgwasResults_sub$rsID[EAgwasResults_sub$Chr==chr & EAgwasResults_sub$BP>loc_min & EAgwasResults_sub$BP<loc_max]
+
 EAgwasResults_sub$highlight.snps[EAgwasResults_sub$rsID %in% neighbours.snps] <- 1
 }
 ```
@@ -84,9 +94,13 @@ EAgwasResults_sub$highlight.snps[EAgwasResults_sub$rsID %in% neighbours.snps] <-
 ```
 png(file="manhattan_with_highlights.png" , width = 1200, height = 600)
 # add highlight command to the Manhattan plot 
-manhattan(EAgwasResults_sub, chr="Chr", bp="BP", snp="rsID",
-                            p="P", 
-                            highlight=EAgwasResults_sub$rsID[EAgwasResults_sub$highlight.snps==1],
+
+manhattan(EAgwasResults_sub, 
+          chr="Chr",
+          bp="BP",
+          snp="rsID",
+          p="P", 
+          highlight=EAgwasResults_sub$rsID[EAgwasResults_sub$highlight.snps==1],
                             suggestiveline=F)
 dev.off()
 ```
