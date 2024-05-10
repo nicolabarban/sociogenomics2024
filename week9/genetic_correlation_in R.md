@@ -1,6 +1,6 @@
 # Where to find summary statistics
 
-* [Gwas Atlas](https://atlas.ctglab.nl/t) Gwas Atlas
+* [Gwas Atlas](https://atlas.ctglab.nl) Gwas Atlas
 * [GWAS Catalog](https://www.ebi.ac.uk/gwas/)
 * [Biobank Japan](https://pheweb.jp/)
 * [FInnGEn](https://www.finngen.fi/en/access_results)
