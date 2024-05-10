@@ -1,25 +1,24 @@
 # Where to find summary statistics
 
-1. [The PGC (Psychiatric Genomics Consortium)](https://www.med.unc.edu/pgc/results-and-downloads), has analyzed common psychiatric disorders (MDD, Schizophrenia, ADHD, OCD, Bipolar Disorder and more)
+* [Gwas Atlas](https://atlas.ctglab.nl/t) Gwas Atlas
+* [GWAS Catalog](https://www.ebi.ac.uk/gwas/)
+* [Biobank Japan](https://pheweb.jp/)
+* [FInnGEn](https://www.finngen.fi/en/access_results)
+* [Pan UKKB](https://docs.google.com/spreadsheets/d/1AeeADtT0U1AukliiNyiVzVRdLYPkTbruQSk38DeutU8/edit#gid=268241601) Pan Ancestry GWAS analysis of UK Biobank
+* [The Nealelab](http://www.nealelab.is/uk-biobank) quickly ran and published online GWAS of >4000 traits that were measured as part of the UK Biobank. These traits include many disease (ICD-10 diagnostic codes, both self reported and based on hospital data), social traits (e.g. social deprivation), personality traits (e.g. neuroticism), cognition (e.g. memory) and many more (from snoring to the propensity to drive to fast). The Nealelab ran these GWAS very quickly and as a service to the field. Their GWAS of case/control traits use linear regression (linear probability model). Please read their extensive read me which describes their GWAS analysis in detail.
 
-2. [The SSGAC (Social Sciences Genetic Association Consortium)](https://www.thessgac.org/data) performs genome wide association studies of a variety of social and psychological traits like education, personality, and reproductive behavior.
+* [The PGC (Psychiatric Genomics Consortium)](https://www.med.unc.edu/pgc/results-and-downloads), has analyzed common psychiatric disorders (MDD, Schizophrenia, ADHD, OCD, Bipolar Disorder and more)
 
-3. [The Nealelab](http://www.nealelab.is/uk-biobank) quickly ran and published online GWAS of >4000 traits that were measured as part of the UK Biobank. These traits include many disease (ICD-10 diagnostic codes, both self reported and based on hospital data), social traits (e.g. social deprivation), personality traits (e.g. neuroticism), cognition (e.g. memory) and many more (from snoring to the propensity to drive to fast). The Nealelab ran these GWAS very quickly and as a service to the field. Their GWAS of case/control traits use linear regression (linear probability model). Please read their extensive read me which describes their GWAS analysis in detail.
+* [The SSGAC (Social Sciences Genetic Association Consortium)](https://www.thessgac.org) performs genome wide association studies of a variety of social and psychological traits like education, personality, and reproductive behavior.
 
-4. [The CCACE (Centre for Cognitive Ageing and Cognitive Epidemiology)](http://www.ccace.ed.ac.uk/node/335) has published GWAS on assorted personality traits, cognitive traits, and tiredness.
+* [The GPC (Genetics of Personality Consortium)](http://www.tweelingenregister.org/GPC/) published several, slightly dated, GWAS on the "Big 5" personality scales.
+
+* [The EGG (Early Growth Genetics)](https://egg-consortium.org/) Consortium performs GWAS of traits related to early growth.
+
+* [The GIANT consortium](https://portals.broadinstitute.org/collaboration/giant/index.php/GIANT_consortium_data_files) publishes GWAS, mainly about antropomorpic traits.
 
 
-5. [The GPC (Genetics of Personality Consortium)](http://www.tweelingenregister.org/GPC/) published several, slightly dated, GWAS on the "Big 5" personality scales.
-
-6. [The EGG (Early Growth Genetics)](https://egg-consortium.org/) Consortium performs GWAS of traits related to early growth.
-
-7. [The GIANT consortium](https://portals.broadinstitute.org/collaboration/giant/index.php/GIANT_consortium_data_files) publishes GWAS, mainly about antropomorpic traits.
-
-8. [GWAS Catalog](https://www.ebi.ac.uk/gwas/)
-9. [Biobank Japan](https://pheweb.jp/)
-10. [FInnGEn](https://www.finngen.fi/en/access_results)
-11. [Pan UKKB](https://docs.google.com/spreadsheets/d/1AeeADtT0U1AukliiNyiVzVRdLYPkTbruQSk38DeutU8/edit#gid=268241601) Pan Ancestry GWAS analysis of UK Biobank
-12. 
+ 
 
 
 
