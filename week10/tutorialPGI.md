@@ -17,7 +17,7 @@ based on https://choishingwan.github.io/PRS-Tutorial/base/
 wget "http://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST90275001-GCST90276000/GCST90275127/harmonised/GCST90275127.h.tsv.gz"
 
 gunzip -c GCST90275127.h.tsv.gz | head
-```
+````
 
 
  renaming the file into Parkinson_gwas
@@ -51,7 +51,7 @@ gzip  > parkinson.gz
 gunzip -c parkinson.gz |\
 awk '{seen[$9]++; if(seen[$9]==1){ print}}' |\
 gzip - > parkinson.nodup.gz
-``
+```
 
 The above command does the following:
 
@@ -69,18 +69,18 @@ awk '!( ($3=="A" && $4=="T") || \
         ($3=="G" && $4=="C") || \
         ($3=="C" && $4=="G")) {print}' |\
     gzip > parkinson.QC.gz
-````
+```
 
 ## Working on the target Data
 
 selecting EUR samples
-``
+```
 awk 'NR>1 && ($6=="EUR")  {print 0, $1}' 1kg_samples.txt >EUR_sample.txt
 
-``
+```
 Quality control for Base file
 
-``
+```
 ./plink \
     --bfile 1kg_hm3 \
     --maf 0.01 \
@@ -91,7 +91,7 @@ Quality control for Base file
     --write-snplist \
     --make-just-fam \
     --out EUR.QC
-``
+```
 
 ## Calculating PGI with plink
 
@@ -99,7 +99,7 @@ Quality control for Base file
 ### Clumping
 Linkage disequilibrium, which corresponds to the correlation between the genotypes of genetic variants across the genome, makes identifying the contribution from causal independent genetic variants extremely challenging. One way of approximately capturing the right level of causal signal is to perform clumping, which removes SNPs in ways that only weakly correlated SNPs are retained but preferentially retaining the SNPs most associated with the phenotype under study. Clumping can be performed using the following command in plink:
 
-``
+```
 ./plink \
     --bfile 1kg_hm3 \
     --clump-p1 1 \
@@ -110,7 +110,7 @@ Linkage disequilibrium, which corresponds to the correlation between the genotyp
     --clump-field p_value \
     --out EUR
 	
-``
+```
 
 
 Extracting from the file EUR.clumped the list of SNPs
@@ -120,9 +120,9 @@ This will generate EUR.clumped, containing the index SNPs after clumping is perf
 $3 because the third column contains the SNP ID
 
 
-``
+```
 awk 'NR!=1{print $3}' EUR.clumped >  EUR.valid.snp
-``
+```
 
 
 We read from the parkinson.QC.gz file, assuming that the 9th column is the SNP ID; 3rd column is the effective allele information; the 5th column is the effect size estimate; and that the file contains a header
@@ -130,7 +130,7 @@ We read from the parkinson.QC.gz file, assuming that the 9th column is the SNP I
 
 
 
-``
+```
 gunzip -c parkinson.QC.gz > parkinson.QC.tsv
 head parkinson.QC.tsv
 
@@ -143,13 +143,13 @@ head parkinson.QC.tsv
 	
 head EUR.profile 	
 	
-``
+```
 
 # PGI with PRSice
 
 Calculate scores using all SNPs
 
-``
+```
 
 Rscript PRSice.R \
     --prsice PRSice_mac \
@@ -168,12 +168,12 @@ Rscript PRSice.R \
     --binary-target F \
     --extract EUR.valid.snp \
     --out Parkinson_score_all
-``
+```
 
 
 here using different threesholds
 
-``
+```
 
 Rscript PRSice.R \
     --prsice PRSice_mac \
@@ -193,12 +193,13 @@ Rscript PRSice.R \
     --binary-target F \
     --extract EUR.valid.snp \
     --out Parkinson_score_thresholds
-``
+```
 
 
 
 in R
-``
+
+```
 
 data_PRSice<-read.table("Parkinson_score_thresholds.all_score", header=T)
 head(data_PRSice)
@@ -214,4 +215,4 @@ data_merge<-merge(data_PRSice,data_Plink, by=c("FID", "IID"))
  
  
  
-``
+```
