@@ -1,4 +1,4 @@
-# Sociogenomics 2023/2024
+# Sociogenomics 2024/2025
 ## Instructor: Prof. Nicola Barban
 ## University of Bologna
 
@@ -6,12 +6,6 @@
 ## Students' presentations
 * [Topics and Instructions](presentations.md)>
 
-## Week 1
-
-* [Lab 1](week1/lab1.md)
-
-### Data
-* [week1.zip](https://www.dropbox.com/s/mato9e1ovrom4ov/week1.zip?dl=0)
 
 ## Week 2
 
