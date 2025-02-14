@@ -10,7 +10,7 @@
 * Be creative
 
 ---
-## Topics
+## Topics Febrauary-March
 
 ### 1. Birth of Eugenics 
 
@@ -36,3 +36,22 @@
 * [Bad Blood podcast Episode 5](https://www.bbc.co.uk/sounds/play/m001g927)
 * [Bad Blood podcast Episode 6](https://www.bbc.co.uk/sounds/play/m001gj50)
 * [link to AMCG paper](https://www.gimjournal.org/article/S1098-3600(23)01068-7/fulltext)
+
+### 5. Heritability, Twin Studies
+*[Dalton Conley TED talk](https://www.youtube.com/watch?v=AMYM1SXDefQ)
+*[Classical twin studies and beyond](https://www.nature.com/articles/nrg932)
+*[Heritability in the genomics era — concepts and misconceptions](https://www.nature.com/articles/nrg2322)
+
+
+
+## Topics April-May
+
+### 6. Genetic correlations
+
+### 7. Direct and indirect genetic effects
+
+### 8. Gene-Environment correlations
+
+### 9. Measuring Biological Ageing
+
+### 10 
